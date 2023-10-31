@@ -4,9 +4,12 @@ export default function RootLayout() {
   return (
     <>
       <header>
-        <Link to="/"> React Stock</Link>
+        <Link to="/" className="logo">
+          {" "}
+          React Stock
+        </Link>
         <nav>
-          <Link to={"/"}>Imicio</Link>
+          <Link to={"/"}>Inicio</Link>
           <Link to={"/src/pages/Items"}>Items</Link>
         </nav>
       </header>
