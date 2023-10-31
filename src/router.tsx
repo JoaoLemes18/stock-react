@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import RootLayout from "./pages/Items/RootLayout";
+import RootLayout from "./pages/RootLayout";
 import ItemsLayout from "./pages/Items/Layout";
 import ListItems from "./pages/Items/ListItems";
 import CreateItem from "./pages/Items/CreateItem";
