@@ -11,7 +11,7 @@ export default function RootLayout() {
         </nav>
       </header>
       <div>
-        <Outlet></Outlet>
+        <Outlet />
       </div>
       <footer>Feito por, João Lemes :D </footer>
     </>
