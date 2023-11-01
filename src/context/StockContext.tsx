@@ -19,16 +19,26 @@ export function StockContextProvider({ children }: { children: ReactNode }) {
     return parsedItems;
   });
 
-  const addItem = (item) => {
-    setItems((currentState) => {
-      const updatedItems =[item...currentState];
-      localStorage.setItem ("react-stock", JSON.stringify(updatedItems))
+  // Add itens
+  const addItem = (item: ItemType) => {
+    setItems((currentState: ItemType[]) => {
+      const updatedItems = [item, ...currentState];
+      localStorage.setItem("react-stock", JSON.stringify(updatedItems));
+      return updatedItems;
     });
   };
 
+  const stock = {
+    items,
+    addItem,
+  };
+
   return (
-    <StockContext.Provider value={{ items, addItem }}>
-      {children}
-    </StockContext.Provider>
+    <StockContext.Provider value={stock}>{children}</StockContext.Provider>
   );
 }
+
+type ItemType = {
+  id: number;
+  name: string;
+};
