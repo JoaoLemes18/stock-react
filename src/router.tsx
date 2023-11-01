@@ -1,10 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
 import RootLayout from "./pages/RootLayout";
-import ItemsLayout from "./pages/Items/Layout";
-import ListItems from "./pages/Items/ListItems";
-import CreateItem from "./pages/Items/CreateItem";
-import ShowItem from "./pages/Items/ShowItem";
-import UpdateItem from "./pages/Items/UptadeItem";
+import ItemsLayout from "./pages/items/Layout";
+import ListItems from "./pages/items/ListItems";
+import CreateItem from "./pages/items/CreateItem";
+import ShowItem from "./pages/items/ShowItem";
+import UpdateItem from "./pages/items/UptadeItem";
 import Home from "./pages/Home";
 
 const router = createBrowserRouter([

@@ -10,7 +10,7 @@ export default function RootLayout() {
         </Link>
         <nav>
           <Link to={"/"}>Inicio</Link>
-          <Link to={"/src/pages/Items"}>Items</Link>
+          <Link to={"/items"}>Itens</Link>
         </nav>
       </header>
       <div>
