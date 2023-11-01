@@ -4,11 +4,11 @@ export default function Layout() {
   return (
     <main>
       <h1>Stock Itens</h1>
-      <div className="tabs">
+      <nav className="tabs">
         <Link to={"/items"}>Todos os itens</Link>
 
         <Link to={"/items/new"}>Novo item</Link>
-      </div>
+      </nav>
       <Outlet />
     </main>
   );
